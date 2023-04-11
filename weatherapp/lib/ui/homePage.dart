@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
   static String API_KEY =
       '1e63c7325921494e8b7115331231104'; //Paste Your API Here
 
-  String location = 'Mumbai'; //Default location
+  String location = 'Budapest'; //Default location
   String weatherIcon = 'heavycloudy.png';
   int temperature = 0;
   int windSpeed = 0;
@@ -144,11 +144,6 @@ class _HomePageState extends State<HomePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Icon(
-                        Icons.menu,
-                        color: Colors.white,
-                        size: 35,
-                      ),
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
