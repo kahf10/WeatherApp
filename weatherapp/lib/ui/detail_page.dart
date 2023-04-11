@@ -61,16 +61,6 @@ class _DetailPageState extends State<DetailPage> {
         centerTitle: true,
         backgroundColor: _constants.primaryColor,
         elevation: 0.0,
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 8.0),
-            child: IconButton(
-                onPressed: () {
-                  print("Settings Tapped!");
-                },
-                icon: const Icon(Icons.settings)),
-          )
-        ],
       ),
       body: Stack(
         alignment: Alignment.center,
@@ -129,7 +119,8 @@ class _DetailPageState extends State<DetailPage> {
                               top: 150,
                               left: 30,
                               child: Padding(
-                                padding: const EdgeInsets.only(bottom: 10.0),
+                                padding: const EdgeInsets.only(
+                                    top: 18.0, bottom: 10.0),
                                 child: Text(
                                   getForecastWeather(0)["weatherName"],
                                   style: const TextStyle(
@@ -239,7 +230,9 @@ class _DetailPageState extends State<DetailPage> {
                                                             .center,
                                                     children: [
                                                       Padding(
-                                                        padding: const EdgeInsets.only(top: 8.0),
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .only(top: 8.0),
                                                         child: Text(
                                                           getForecastWeather(0)[
                                                                   "minTemperature"]
@@ -281,7 +274,9 @@ class _DetailPageState extends State<DetailPage> {
                                                             .center,
                                                     children: [
                                                       Padding(
-                                                        padding: const EdgeInsets.only(top: 8.0),
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .only(top: 8.0),
                                                         child: Text(
                                                           getForecastWeather(0)[
                                                                   "maxTemperature"]
@@ -408,7 +403,9 @@ class _DetailPageState extends State<DetailPage> {
                                                             .center,
                                                     children: [
                                                       Padding(
-                                                        padding: const EdgeInsets.only(top: 8.0),
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .only(top: 8.0),
                                                         child: Text(
                                                           getForecastWeather(1)[
                                                                   "minTemperature"]
@@ -450,7 +447,9 @@ class _DetailPageState extends State<DetailPage> {
                                                             .center,
                                                     children: [
                                                       Padding(
-                                                        padding: const EdgeInsets.only(top: 8.0),
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .only(top: 8.0),
                                                         child: Text(
                                                           getForecastWeather(1)[
                                                                   "maxTemperature"]
@@ -577,7 +576,9 @@ class _DetailPageState extends State<DetailPage> {
                                                             .center,
                                                     children: [
                                                       Padding(
-                                                        padding: const EdgeInsets.only(top: 8.0),
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .only(top: 8.0),
                                                         child: Text(
                                                           getForecastWeather(2)[
                                                                   "minTemperature"]
@@ -619,7 +620,9 @@ class _DetailPageState extends State<DetailPage> {
                                                             .center,
                                                     children: [
                                                       Padding(
-                                                        padding: const EdgeInsets.only(top: 8.0),
+                                                        padding:
+                                                            const EdgeInsets
+                                                                .only(top: 8.0),
                                                         child: Text(
                                                           getForecastWeather(2)[
                                                                   "maxTemperature"]
