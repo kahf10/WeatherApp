@@ -5,37 +5,33 @@ class WeatherItem extends StatelessWidget {
   final String unit;
   final String imageUrl;
 
-  const WeatherItem(
-      {Key? key,
-      required this.value,
-      required this.unit,
-      required this.imageUrl})
-      : super(key: key);
+  const WeatherItem({
+    Key? key,
+    required this.value,
+    required this.unit,
+    required this.imageUrl,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Container(
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           height: 60,
           width: 60,
           decoration: BoxDecoration(
             color: Colors.transparent,
-            borderRadius: BorderRadius.circular(13),
+            borderRadius: BorderRadius.circular(15),
           ),
           child: Image.asset(imageUrl),
         ),
-        SizedBox(
-          height: 8,
-        ),
-        Text(
-          value.toString() + unit,
-          style: const TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-          ),
-        )
+        const SizedBox(height: 8),
+        Text(value.toString() + unit,
+            style: const TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+            ))
       ],
     );
   }
